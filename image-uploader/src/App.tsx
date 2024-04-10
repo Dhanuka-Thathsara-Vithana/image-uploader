@@ -2,12 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import backImg from '../assets/image.jpg'
+import { Box, Grid, Paper } from '@mui/material'
+
+const styles = {
+  paperContainer: {
+      backgroundImage: `url(${backImg})`
+  }
+};
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <Paper style={styles.paperContainer}>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
