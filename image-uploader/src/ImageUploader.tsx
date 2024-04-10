@@ -43,7 +43,7 @@ function ImageUploader() {
 
     <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p>
     </Grid>
-      <Grid sx={{ padding: '1rem' }} item xs={6} md={4} >
+      <Grid sx={{ padding: '6rem' }} item xs={6} md={4} >
           <Button  
                   onClick={handelClick}
                   variant="contained"
